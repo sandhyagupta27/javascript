@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string </title>
+</head>
+<body>
+    <script>
+let str ="     SGSITS College    ";
+let str2 ="sandhya";
+console.log(str[1]);
+console.log(str2[1]);
+ let newStr= str.toUpperCase();
+console.log(str);
+console.log(newStr);
+console.log(str.trim());
+//template literals
+
+let obj = {
+    item :"pen",
+    price:10,
+};
+let output =`the cost of ${obj.item} is ${obj.price} rupees`;
+console.log(output)
+// console.log("the cost of", obj.item,"is",obj.price,"rupees");
+
+let specialString=`This is a template literals ${1+2+3}`;
+console.log( specialString);
+
+//some more string method
+
+let str1 = "012345678";
+console.log(str1.slice(1,7));//123456
+let str3 = "helloworld";
+console.log(str3.slice(1,6));//123456
+ let res = str1.concat(str3);
+// let res = " i am leaning coding " + str1 + str3;
+ console.log(res);
+console.log( str1.replace("45","m"));
+console.log(str3.charAt(4))//o
+
+//practice n
+
+let fullNam = prompt("enter your full name without spaces");
+let username = "@"+ fullNam+fullNam.length;
+console.log(username);
+
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading {
+            color: rgb(0, 0, 0);
+            background-color: rgb(94, 56, 116);
+        }
+
+        .heading-class {
+            color: rgb(28, 29, 22);
+            background-color: rgb(107, 161, 143);
+        }
+
+        body {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>abcd
+        <div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis et commodi expedita numquam nulla
+            reprehenderit! Velit eos, voluptatem necessitatibus nam sapiente praesentium nobis omnis.</p>
+    </div>
+    <h1 id="heading">DOM demo by Apna college</h1>
+    <h1 class="heading-class">javascript</h1>
+    <h1 class="heading-class">topic1</h1>
+    <p>let learn about Dom concept in details</p>
+    <p>2nd paragraph</p>
+    <button id="myId">click me</button>
+    <script>
+        console.log(document.body);
+        console.dir(document.body);
+
+        let heading = document.getElementById("heading");
+        console.log("heading");
+        console.dir(heading);
+
+        let headings = document.getElementsByClassName("heading-class");//h1
+        console.log("headings")
+        console.dir(headings);
+
+        let parahs = document.getElementsByTagName("p")
+        console.log("parahs");
+        console.dir(parahs);
+
+        let firstElements = document.querySelector("p");// return 1st element 
+        console.log("firstElements");
+        console.dir(firstElements);
+
+        let allElements = document.querySelectorAll("p");// return all element (node list)
+        console.log("allElements");
+        console.dir(allElements);
+
+        let allEl = document.querySelectorAll(".heading-class");// return all element (node list)
+        console.log("allEl");
+        console.dir(allEl);
+
+        let firstEl = document.querySelector(".heading-class");// return 1st element
+        console.log("firstEl");
+        console.dir(firstEl);
+
+
+        let firstEle = document.querySelector("#myId");// return 1st element
+        console.log("firstEle");
+        console.dir(firstEle);
+
+
+        console.dir(document.body.firstChild); //#text
+        let a = document.querySelector("div");
+        console.log(a);
+
+        let b = document.querySelector("div").children;
+        console.log(b);
+
+ 
+    </script>
+</body>
+
+</html>

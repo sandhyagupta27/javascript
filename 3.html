@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable and operators and conditional statement</title>
+</head>
+<body>
+   <script>
+    //arithmetic operators
+let a=5;
+let b=2;
+console.log("a+b=",a+b) ;
+ console.log("a-b",a-b);
+ console.log("a=",a,"& b=",b);
+ console.log("a*b",a*b);
+ console.log("a/b",a/b);
+ console.log("a%b",a%b);
+ console.log("a**b",a**b);
+
+ //unary operator
+//  a=a+1; 
+// a++;
+//  console.log("a=",a);
+//  a=a-1;
+// a--;
+//  console.log("a=",a);
+let c=7;
+let d=3
+console.log("++c=",++c);
+console.log("c=",c);
+let x=12
+let y=4
+console.log("x=",x,"& y=",y);
+console.log("x++=",x++);
+console.log("x=",x);
+//assignment operator
+let p=11
+let q=1
+p%= 5;//11%=5
+console.log("p=",p);//p=1
+p+= 5;//1+=5
+console.log("p=",p);//p=6
+p-= 5;//p=6//6-=5
+console.log("p=",p);//p=1
+p/= 5;//1/=5
+console.log("p=",p);//p=0.2
+p**= 5;//0.2**5//it means power
+console.log("p=",p);//p=0.2
+
+//comparision operators
+let r=22
+let s=14
+console.log("22==14",r==s);//false
+let m=20
+let n=20
+console.log("22==22",m==n);//true
+let f=22
+let g=14
+console.log("22!=22",f!=g);//true
+let i=14//number
+let j="14"//string--> number
+console.log("i==j",i==j);//true
+
+let A=14//number
+let B="14"//string--> number
+console.log("A===B",A===B);//false///=== this camparision operator is in stricter version
+
+let C=14//number
+let D="14"//string--> number
+console.log("C!==j",C!==D);//true
+
+let E=5//number
+let F=3
+console.log("5>3",E>F);//true
+
+//logical opeerators
+
+let G=14//number
+let H= 15
+//  let cond1= G<H;//true
+//  let cond2= G===14;//true
+// console.log("cond1 && cond2 =", cond1 && cond2);//true
+
+console.log("cond1 && cond2 =",G<H && G===14);
+
+
+let I=14//number
+let J= 15
+//  let cond1= G<H;//true
+//  let cond2= G===14;//true
+// console.log("cond1 && cond2 =", cond1 && cond2);//true
+
+console.log("cond1 || cond2 =",G>H || G===14);
+//dono condition me se koi v ek condition true to output true hoga
+
+let K=14//number
+let L=13//string--> number
+console.log("!(14<13)=",!(K<L));//true
+
+
+//conditional statement
+let age=15;
+if(age>18){
+    console.log("you can drive");
+    
+}
+if(age<18){
+    console.log("you can not drivve");
+    
+}
+
+/// another example
+
+// let mode="dark";
+// let color;
+// if(mode === "dark"){
+// color = "black";
+// }
+// if(mode === "light"){
+// color = "white";
+// }
+// console.log(color);
+
+
+//if else
+
+// let mode="blue";
+// let color;
+// if(mode === "dark-mode"){
+//     colour="black"
+// }
+// else{
+//   color= "white"
+// }
+// console.log(color);
+
+// // example
+
+let num =3;
+if(num%2 === 0){
+    console.log(num,"even");
+}
+else{
+console.log(num,"odd");
+
+}
+
+//else if
+ 
+ let mode= "silver";
+ let color;
+ if(mode==="dark"){
+    color="black"
+ }
+ else if(mode==="blue"){
+    color="blue"
+ }
+ if(mode==="pink"){
+    color="pink"
+ }
+ else{
+    color= "white"
+ }
+ console.log(color);
+ 
+ ///ternary operator
+  let boy = 25;
+let result= age>=18?"adult" : "not adult"
+console.log(result);
+
+//switch case
+const expr="papayas"
+switch(expr) {
+    case 'oranges':
+console.log('mangoes and papayas are good');
+break;
+    case'papayas':
+    console.log('papayas are good for health');
+    break;
+default:
+    console.log('sorry');
+    
+
+}
+   </script>
+</body>
+</html>

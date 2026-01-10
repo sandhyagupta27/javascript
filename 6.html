@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function myFunction(){
+    console.log("Welcome to SGSITS");
+    console.log("We are learning js");
+    console.log("Welcome to SGSITS");
+    console.log("We are learning js");
+  }
+  
+//   myFunction();
+//   myFunction();
+//   myFunction();
+//   myFunction();//
+ 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+function myFunction(msg){
+    // parametre-->> input
+    console.log(msg);
+    
+}
+
+myFunction("i love js");//argument
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function name(msg,n){
+    console.log(msg,n); 
+
+}
+name("sandhya",3);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///function--> sum of two numbers
+
+function sum(x,y){
+    console.log(x+y);
+}
+sum(3,4);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// for return
+
+function add(x,y){
+    //local variable
+a=x+y;
+console.log("before rturn")
+return a;
+console.log("after return")
+//retrun ke code ke bad kuch nhi likhte kyuki vo execute nhi hota
+}
+let val = add(3,4);
+console.log(val);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// *Arrow Function
+//sum function
+function summation(a,b){
+    return a+b;
+}
+const arrowsummation = (a,b)=>{
+    console.log(a+b);
+};
+//multiplicaitn function
+
+function mul(a,b) {
+    return a*b;
+    
+}
+
+const arrowMul = (a,b) =>{
+    console.log(a*b);
+    
+}
+const printHello =()=>{
+console.log("hello");
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    </script>
+</body>
+</html>

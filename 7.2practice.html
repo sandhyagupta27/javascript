@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM practice</title>
+    <style>
+        .item{
+            color: brown;
+        }
+        .newclass{
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="item">i am a apragraph</p>
+
+    <script>
+        let newBtn = document.createElement("button")
+        newBtn.innerText = "click me!";
+        newBtn.style.backgroundColor = "red";
+        newBtn.style.Color = "white";
+        document.querySelector("body").prepend(newBtn);
+
+        ///2
+let pra = document.querySelector("p");
+pra.classList.add("newclass")
+
+    </script>
+
+</body>
+
+</html>

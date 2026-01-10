@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+   
+    <script>
+    //    let div=document.querySelector("div");
+    //    console.log(div);
+
+    //    let id=div.getAttribute("id");
+    //    console.log(id);
+
+    //    let name=name.getAttribute("name");
+    //    console.log(name);
+       
+       let newBtn = document.createElement("button");
+       newBtn.innerText ="clickme";
+       newBtn.style.backgroundColor = "red";
+       newBtn.style.Color="white"
+       let body = document.querySelector("body");
+       body.prepend(newBtn);
+       </script>
+</body>
+</html>
