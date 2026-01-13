@@ -26,7 +26,6 @@
 button:hover {
   transform: scale(1.05);
 }
-
 #game-box {
   border: 2px solid black;
   display: inline-flex;
@@ -36,16 +35,11 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,2);
 }
-
 #game-box button {
   background-color: white;
   border: none;
   cursor: pointer;
-}
-
-
-    
-   
+}   
 </style>
 <body> 
 
@@ -78,6 +72,9 @@ let score={
   win:0,
   userlost:0,
   tie:0,
+  displayScore : function(){
+    return `WOn: ${score.win}, lost:${score.userlost}, tied:${score.tie}`;
+  }
 }
 
     function generateComputerChoice(){
@@ -132,8 +129,7 @@ let score={
     alert(`You have chosen ${userMove}. Computer choice is ${computerMove} 
     
      ${result}
-     
-     Won:${score.win},Lost:${score.userlost},Tied:${score.tie}`
+     {score.displayScore()}`
      );
   }
    </script>
