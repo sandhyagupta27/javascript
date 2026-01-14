@@ -39,7 +39,14 @@ button:hover {
   background-color: white;
   border: none;
   cursor: pointer;
-}   
+}  
+.my-btn{
+  border: 2px solid rgb(106, 25, 25);
+  padding:20px 20px ;
+  font-size: large;
+  text-align: center;
+  display: inline-block;
+} 
 </style>
 <body> 
 
@@ -67,10 +74,13 @@ showResult('Stump',computerChoice,resultMsg);
 
    </div>
 
-   <button onclick="localStorage.clear()
+<button class="my-btn" onclick="localStorage.clear()
   resetScore();
-   ">Reset</button>
-
+ ">Reset</button>
+<h3 id = "user-move"></h3>
+<h3 id = "computer-move"></h3>
+<h3 id = "result"></h3>
+<h3 id="score"></h3>
    <script>
     let scoreStr = localStorage.getItem('Score');
     let score;
@@ -83,8 +93,9 @@ showResult('Stump',computerChoice,resultMsg);
       };
 
 score.displayScore = function(){
-    return `NO. of matches Won: ${score.win}, lost:${score.userlost}, tied:${score.tie}`;
+    return `Score: Won: ${score.win}, Lost:${score.userlost}, tied:${score.tie}`;
   };
+  showResult();
 }
 
     function generateComputerChoice(){
@@ -134,14 +145,16 @@ score.displayScore = function(){
    }
     }
   }
+  
   function showResult(userMove,computerMove,result){
     localStorage.setItem('Score',JSON.stringify(score));
-    alert(`You have chosen ${userMove}. Computer choice is ${computerMove} 
-    
-     ${result}
+    document.querySelector('#user-move').innerText= userMove?`you have chosen ${userMove}`:'';
 
-     ${score.displayScore()}`
-     );
+    document.querySelector('#computer-move').innerText=computerMove?`computer choice is ${computerMove}`:'';
+
+     document.querySelector('#result').innerText=result?result:'';
+
+     document.querySelector('#score').innerText=score.displayScore();
   }
    </script>
 </body> 
